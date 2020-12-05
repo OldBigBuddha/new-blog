@@ -9,7 +9,7 @@ import { getPostBySlug, getAllPosts } from '../../lib/api'
 import PostTitle from '../../components/post-title'
 import Head from 'next/head'
 import { CMS_NAME } from '../../lib/constants'
-import markdownToHtml from '../../lib/markdownToHtml'
+import markdownToHtml  from '../../lib/markdownToHtml'
 import PostType from '../../types/post'
 
 type Props = {
@@ -70,7 +70,8 @@ export const getStaticProps = async ({ params }: Params) => {
     'slug',
     'content',
   ])
-  const content = await markdownToHtml(post.content || '')
+  // const content = await markdownToHtml(post.content || '')
+  const content = markdownToHtml(post.content || "");
 
   return {
     props: {
