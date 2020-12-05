@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 const Footer = () => {
   return (
     <footer className="flex bg-accent-1 border-t border-accent-2 justify-between">
@@ -8,18 +10,8 @@ const Footer = () => {
         <small>&copy; 2020 OldBigBuddha.</small>
       </div>
       <div className="flex flex-col lg:flex-row">
-        <a
-          href="#"
-          className="mx-3 font-bold hover:underline"
-        >
-          Privacy Policy
-        </a>
-        <a
-          href="https://github.com/OldBigBuddha/Blog"
-          className="mx-3 font-bold hover:underline"
-        >
-          View on GitHub
-        </a>
+        <Link href="/privacy-policy"><a className="mx-3 font-bold hover:underline">Privacy Policy</a></Link>
+        <a href="https://github.com/OldBigBuddha/Blog" className="mx-3 font-bold hover:underline">View on GitHub</a>
       </div>
     </footer>
   )

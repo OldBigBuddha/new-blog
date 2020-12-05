@@ -29,6 +29,29 @@
     @apply text-gray-700;
   }
 
+  h2,
+  h3,
+  h4 {
+    @apply text-gray-700;
+    @apply my-4;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+
+  h4 {
+    @apply text-lg;
+  }
+
+  p {
+    @apply my-4;
+  }
+
   a {
     @apply text-green-500;
     @apply no-underline;
