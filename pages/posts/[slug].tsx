@@ -10,7 +10,7 @@ import PostTitle from '../../components/post-title'
 import Head from 'next/head'
 import { CMS_NAME } from '../../lib/constants'
 import markdownToHtml  from '../../lib/markdownToHtml'
-import PostType from '../../types/post'
+import PostType from '../../interfaces/post'
 
 type Props = {
   post: PostType

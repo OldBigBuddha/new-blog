@@ -1,6 +1,3 @@
-import Container from './container'
-import { EXAMPLE_PATH } from '../lib/constants'
-
 const Footer = () => {
   return (
     <footer className="flex bg-accent-1 border-t border-accent-2 justify-between">
