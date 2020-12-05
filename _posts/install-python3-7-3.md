@@ -2,8 +2,7 @@
 title: Python 3.7.3 をビルドする
 date: 2019-04-27
 tags:
- - [Python]
- - [Python 3.7.3]
+ - Python
 code: true
 ---
 Feren OS に Python 3.7.3 を自分でビルドしてインストールしたときのメモです。

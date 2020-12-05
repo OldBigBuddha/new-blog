@@ -2,9 +2,9 @@
 title: Linux に Anaconda3 と PyCharm を入れる
 date: 2019-04-28
 tags:
-- [Python]
-- [Anaconda3]
-- [PyCharm]
+- Python
+- Anaconda3
+- PyCharm
 code: true
 ---
 先日 Udemy で [@sakaijun](https://twitter.com/sakaijun) さんの [Python 入門 ＋ 応用のコース](https://www.udemy.com/share/100ZLuBEcfcl1URnQ=/) を購入しました。環境構築のセクションで [Anaconda](https://www.anaconda.com/) と [PyCharm](https://www.jetbrains.com/pycharm/) を導入するのですが、Linux 版の解説がなかったので自分でやったことをまとめておきます。

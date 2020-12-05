@@ -1,10 +1,10 @@
 ---
 title: GitHub Trending をRSS配信する
-date: 2018-12-16 11:21:04
+date: 2018-12-16
 tags:
-  - [Nodejs]
-  - [Express]
-  - [GitHub]
+  - Nodejs
+  - Express
+  - GitHub
 code: true
 ---
 この記事は [クソアプリ Advent Calendar 2018](https://qiita.com/advent-calendar/2018/kuso-app) 16日目の記事です。

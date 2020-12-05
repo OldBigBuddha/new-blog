@@ -1,9 +1,9 @@
 ---
 title: AndroidのGradleでKotlin DSLを使う
-date: 2019-02-18 14:21:05
+date: 2019-02-18
 tags:
-    - [Android]
-    - [Kotlin]
+    - Android
+    - Kotlin
 code: true
 ---
 先日のDroidKaigiで [build.gradle.kts に移行しよう](https://www.youtube.com/watch?v=_s-0MbA5Gvw) というセッションがありました。最近久しぶりにAndroidを弄っているので、そのついで Gradle に Kotlin DSL を導入してみます。あとおまけで buildSrc もやってみます。

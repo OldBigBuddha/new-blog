@@ -2,9 +2,7 @@
 title: DiscordのOAuth認証を使ったみた
 date: 2019-12-20
 tags:
-    - [Python]
-    - [OAuth2.0]
-    - [DiscordAPI]
+    - Python
 code: true
 ---
 

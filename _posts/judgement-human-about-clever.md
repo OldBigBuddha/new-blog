@@ -1,8 +1,6 @@
 ---
 title: 人を判断するときの基準(賢さ)
-date: 2018-11-21 21:40:39
-category:
-  - Tweet
+date: 2018-11-21
 tags:
   - ポエム
 code: false

@@ -1,15 +1,16 @@
 import Container from '../components/container'
 import Layout from '../components/layout'
-import { getAllPosts } from '../lib/api'
+import { getLastPosts } from '../lib/api'
 import Head from 'next/head'
 import Post from '../interfaces/post'
 import PostList from '../components/post-list'
+import Profile from '../components/profile'
 
 type Props = {
-  allPosts: Post[]
+  lastPosts: Post[]
 }
 
-const Index = ({ allPosts }: Props) => {
+const Index = ({ lastPosts }: Props) => {
   return (
     <Layout>
       <Head>
@@ -17,11 +18,15 @@ const Index = ({ allPosts }: Props) => {
       </Head>
       <Container>
         <h1 className="text-4xl font-bold text-center">Simple is Best</h1>
-        <p>This Blog is written by OldBigBuddha.</p>
+
+        <section>
+          <h2 className="text-xl font-bold">Writer</h2>
+          <Profile />
+        </section>
 
         <section>
           <h2 className="text-xl font-bold">New articles</h2>
-          <PostList posts={allPosts}/>
+          <PostList posts={lastPosts}/>
         </section>
       </Container>
     </Layout>
@@ -31,12 +36,9 @@ const Index = ({ allPosts }: Props) => {
 export default Index
 
 export const getStaticProps = async () => {
-  const allPosts = getAllPosts([
-    'title',
-    'slug',
-  ])
+  const lastPosts: Post[] = getLastPosts()
 
   return {
-    props: { allPosts },
+    props: { lastPosts },
   }
 }

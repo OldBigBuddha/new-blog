@@ -3,7 +3,7 @@ title: React Component を画像に変換してダウンロードさせる
 code: true
 date: 2020-06-18
 tags:
-  - [React]
+  - React
 ---
 
 特定の Component を画像に変換してダウンロードする機能を実装したかったので探しました。[html2canvas](https://html2canvas.hertzen.com/) というライブラリを用いることで可能になります。

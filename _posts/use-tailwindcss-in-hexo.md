@@ -3,8 +3,8 @@ title: Hexo で Tailwind CSS を使う
 code: true
 date: 2020-12-03
 tags:
-  - [Hexo]
-  - [Tailwind CSS]
+  - Hexo
+  - 'Tailwind CSS'
 ---
 現在、当ブログのスタイルを Tailwind CSS を用いることによって統一しようという試みをしています。今後ブログを Next.js へ置き換えるための準備と、Tailwind CSS の練習をすることが主な目的です。
 

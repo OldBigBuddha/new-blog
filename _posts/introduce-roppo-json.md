@@ -2,10 +2,8 @@
 title: 六法JSONと言うサービスを作っているお話
 date: 2019-12-02
 tags:
-    - [Python]
-    - [Flask]
-    - [Roppo-JSON]
-    - [Law]
+  - Python
+  - Flask
 code: true
 ---
 

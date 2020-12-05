@@ -1,9 +1,9 @@
 ---
 title: Debianでラジオ用の静止画動画を作る
-date: 2018-12-02 00:00
+date: 2018-12-02
 tags:
-  - [Linux]
-  - [ffmpeg]
+  - Linux
+  - ffmpeg
 code: true
 ---
 

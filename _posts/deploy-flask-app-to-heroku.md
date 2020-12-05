@@ -2,9 +2,9 @@
 title: Heroku に Flask で作った Web アプリをデプロイする
 date: 2019-11-08 15:15:02
 tags:
-  - [Python]
-  - [Flask]
-  - [Heroku]
+  - Python
+  - Flask
+  - Heroku
 code: true
 ---
 最近 Flask で Web API っぽいのを作ってるんですが、いい感じにできてきたので Heroku で公開しようかな、なんてことを考えています。

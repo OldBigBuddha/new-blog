@@ -1,10 +1,9 @@
 ---
 title: NetlifyとCloudFlareを併用しているときに気をつけたいこと
-date: 2018-12-17 21:28:28
+date: 2018-12-17
 tags:
-  - [Netlify]
-  - [CloudFlare]
-  - [CDN]
+  - Netlify
+  - CloudFlare
 code: false
 ---
 先日、偶然以下の記事を読んだ。

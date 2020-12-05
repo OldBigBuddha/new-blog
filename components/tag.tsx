@@ -1,13 +1,11 @@
-import TagType from "../interfaces/tag"
-
 type Props = {
-  tag: TagType
+  tag: string
 }
 
 const Tag: React.FC<Props> = ({tag}: Props) => (
-  <div className="text-sm text-gray-600 border border-gray-700 rounded-full mr-2">
-    {tag.name}
-  </div>
+  <span className="text-xs text-gray-600 border border-gray-700 no-underline rounded-full mr-2 p-2">
+    {tag}
+  </span>
 )
 
 export default Tag;

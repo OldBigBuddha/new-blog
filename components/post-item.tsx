@@ -7,14 +7,12 @@ type Props = {
 }
 
 const PostItem: React.FC<Props> = ({post}: Props) => {
-  const realSlug = post.slug.replace(/\.md$/, "");
-  const isTagsEmpty = post.tags
   return (
-    <div>
-      <Link href={`/posts/${realSlug}`}><a>{post.title}</a></Link>
-      {/* {post.tags != [] && (
+    <div className="inline-block my-2 p-2">
+      <Link href={`/posts/${post.slug}`}><a className="text-lg font-bold mb-2">{post.title}</a></Link>
+      {post.tags && (
         <Tags tags={post.tags} />
-      )} */}
+      )}
     </div>
   )
 }

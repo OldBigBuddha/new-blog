@@ -2,9 +2,8 @@
 title: Notificationを勉強し直す
 date: 2019-12-01
 tags:
-    - [Android]
-    - [Kotlin]
-    - [Notification]
+    - Android
+    - Kotlin
 code: true
 ---
 

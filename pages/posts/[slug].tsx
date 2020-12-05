@@ -5,46 +5,39 @@ import PostBody from '../../components/post-body'
 import Header from '../../components/header'
 import PostHeader from '../../components/post-header'
 import Layout from '../../components/layout'
-import { getPostBySlug, getAllPosts } from '../../lib/api'
+import { getAllPosts, getPostByFilename } from '../../lib/api'
 import PostTitle from '../../components/post-title'
 import Head from 'next/head'
-import { CMS_NAME } from '../../lib/constants'
 import markdownToHtml  from '../../lib/markdownToHtml'
 import PostType from '../../interfaces/post'
 
 type Props = {
   post: PostType
-  morePosts: PostType[]
-  preview?: boolean
 }
 
-const Post = ({ post, morePosts, preview }: Props) => {
+const Post = ({ post }: Props) => {
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
   return (
-    <Layout preview={preview}>
+    <Layout>
       <Container>
         <Header />
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
           <>
+            <Head>
+              <title>
+                {post.title} | Simple is Best
+              </title>
+            </Head>
             <article className="mb-32">
-              <Head>
-                <title>
-                  {post.title} | Next.js Blog Example with {CMS_NAME}
-                </title>
-                {/* <meta property="og:image" content={post.ogImage.url} /> */}
-              </Head>
               <PostHeader
                 title={post.title}
-                coverImage={post.coverImage}
-                date={post.date}
-                author={post.author}
               />
-              <PostBody content={post.content} />
+              <PostBody content={post.html} />
             </article>
           </>
         )}
@@ -62,29 +55,18 @@ type Params = {
 }
 
 export const getStaticProps = async ({ params }: Params) => {
-  type Post = {
-    [title: string]: string;
-  };
-  const post: Post = getPostBySlug(params.slug, [
-    'title',
-    'slug',
-    'content',
-  ])
-  // const content = await markdownToHtml(post.content || '')
-  const content = markdownToHtml(post.content || "");
+  const post: PostType = getPostByFilename(params.slug)
+  const content = markdownToHtml(post.raw || "");
 
   return {
     props: {
-      post: {
-        ...post,
-        content,
-      },
+      post: post
     },
   }
 }
 
 export const getStaticPaths = async () => {
-  const posts = getAllPosts(['slug'])
+  const posts: PostType[] = getAllPosts()
 
   return {
     paths: posts.map((posts) => {

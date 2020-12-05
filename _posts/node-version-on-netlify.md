@@ -3,7 +3,7 @@ title: Netlify でビルドしてたら Nodejs のバージョンが古くて怒
 code: false
 date: 2020-08-22
 tags:
-  - [Netlify]
+  - Netlify
 ---
 
 先日 Hexo のプラグインである [hexo-renderer-marked](https://github.com/hexojs/hexo-renderer-marked) をアップデートしたら Nodejs のバージョンが古いんだよと怒られてしまいました。Netlify はランタイムやツールのバージョンを指定することができるので、その方法をメモしておきます。

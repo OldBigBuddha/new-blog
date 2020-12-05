@@ -2,9 +2,7 @@
 title: Gulpfileをナウく書きたい
 date: 2018-12-15
 tags:
-  - [JavaScript]
-  - [ECMAScript]
-  - [Gulp]
+  - JavaScript
 code: true
 ---
 この記事は[We Are JavaScripters!【執筆初心者歓迎】 Advent Calendar 2018](https://adventar.org/calendars/2972)及び[JavaScript Advent Calendar 2018](https://qiita.com/advent-calendar/2018/javascript)15日目の記事です。

@@ -3,7 +3,7 @@ title: React で BINGO っぽいものを作った
 code: false
 date: 2020-06-07
 tags:
-  - [React]
+  - React
 ---
 React の勉強の一環で BINGO ゲームっぽいサイトを作りました。サイトの名前は [麻雀役 dé BINGO](https://yakubingo.fuga.dev/) です。
 

@@ -1,8 +1,7 @@
-import TagType from "../interfaces/tag"
 import Tag from "./tag";
 
 type Props = {
-  tags: TagType[]
+  tags: string[]
 }
 
 const Tags: React.FC<Props> = ({tags}: Props) => (

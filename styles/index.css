@@ -41,14 +41,6 @@
 
   img {
     @apply block;
-    @apply max-w-full;
-    @apply m-auto;
-    @apply py-2;
-  }
-
-  ul,
-  ol {
-    @apply list-disc;
   }
 }
 
