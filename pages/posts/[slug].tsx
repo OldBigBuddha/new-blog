@@ -33,9 +33,10 @@ const Post = ({ post }: Props) => {
                 {post.title} | Simple is Best
               </title>
             </Head>
-            <article className="mb-32">
+            <article className="mb-32 max-w-2xl mx-auto">
               <PostHeader
                 title={post.title}
+                date={post.date}
               />
               <PostBody content={post.html} />
             </article>
