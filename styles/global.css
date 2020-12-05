@@ -35,13 +35,33 @@
     @apply text-gray-700;
     @apply my-4;
   }
-
   h2 {
     @apply text-2xl;
+    @apply text-gray-700;
+
+    @apply border-b-2;
+    @apply border-solid;
+    @apply border-gray-700;
+  }
+
+  h2::before {
+    content: "#";
+
+    @apply mr-2;
   }
 
   h3 {
     @apply text-xl;
+
+    @apply border-b;
+    @apply border-solid;
+    @apply border-gray-700;
+  }
+
+  h3::before {
+    content: "##";
+
+    @apply mr-2;
   }
 
   h4 {
@@ -64,9 +84,31 @@
 
   img {
     @apply block;
+    @apply bg-white;
+    @apply rounded-xl;
+    @apply shadow;
+    @apply p-2;
   }
-}
 
-#logo {
-  height: 55px;
+  ul,
+  ol {
+    @apply ml-12;
+    @apply mb-4;
+  }
+
+  li {
+    @apply list-disc;
+    @apply leading-normal;
+
+    @apply py-1;
+  }
+
+  code {
+    @apply rounded;
+    @apply border border-solid bg-gray-300;
+    @apply text-sm;
+    @apply font-mono;
+
+    @apply p-2;
+  }
 }

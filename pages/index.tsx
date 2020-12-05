@@ -8,6 +8,8 @@ import PostList from '../components/post-list'
 import Profile from '../components/profile'
 import Links from '../components/links'
 
+import style from '../styles/index.module.css'
+
 type Props = {
   lastPosts: Post[]
 }
@@ -24,18 +26,18 @@ const Index = ({ lastPosts }: Props) => {
 
           {/* 左カラム */}
           <section className="row-start-1 row-end-2 col-start-1">
-            <h2 className="text-xl font-bold">Writer</h2>
+            <h2 className={style.index__h2}>Writer</h2>
             <Profile />
           </section>
 
           <section className="row-start-2 row-end-3 col-start-1">
-            <h2 className="text-xl font-bold">Links</h2>
+            <h2 className={style.index__h2}>Links</h2>
             <Links />
           </section>
 
           {/* 右カラム */}
           <section className="row-start-1 row-end-3 col-start-2">
-            <h2 className="text-xl font-bold">New articles</h2>
+            <h2 className={style.index__h2}>New articles</h2>
             <PostList posts={lastPosts}/>
           </section>
 

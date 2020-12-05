@@ -1,9 +1,11 @@
+import style from '../styles/tag.module.css'
+
 type Props = {
   tag: string
 }
 
 const Tag: React.FC<Props> = ({tag}: Props) => (
-  <span className="text-xs text-gray-600 border border-gray-700 no-underline rounded-full mr-2 p-2">
+  <span className={style.tag}>
     {tag}
   </span>
 )
