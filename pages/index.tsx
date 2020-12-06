@@ -1,6 +1,5 @@
 import Container from '../components/container'
 import Layout from '../components/layout'
-import Header from '../components/header'
 import { getLastPosts } from '../lib/api'
 import Head from 'next/head'
 import Post from '../interfaces/post'
@@ -21,7 +20,6 @@ const Index = ({ lastPosts }: Props) => {
         <title>Simple is Best</title>
       </Head>
       <Container>
-        <Header />
         <div className="grid grid-rows-2 grid-cols-2 mx-8">
 
           {/* 左カラム */}

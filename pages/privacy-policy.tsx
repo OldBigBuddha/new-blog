@@ -1,6 +1,5 @@
 import Container from '../components/container'
 import Layout from '../components/layout'
-import Header from '../components/header'
 import Head from 'next/head'
 
 const PrivacyPolicy: React.FC = () => (
@@ -9,7 +8,6 @@ const PrivacyPolicy: React.FC = () => (
       <title>Privacy Policy | Simple is Best</title>
     </Head>
     <Container>
-      <Header />
       <div className="max-w-2xl mx-auto">
         <h1 className="text-3xl font-bold text-center">プライバシーポリシー及び免責事項</h1>
 
