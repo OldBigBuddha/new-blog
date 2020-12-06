@@ -1,10 +1,22 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
+import { existsGaId, GA_ID } from '../lib/gtag'
 
 export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="ja">
-        <Head />
+        <Head>
+          {existsGaId && (
+            <>
+            <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","${GA_ID}",{page_path:window.location.pathname});`
+              }}
+            />
+            </>
+          )}
+        </Head>
         <body>
           <Main />
           <NextScript />
