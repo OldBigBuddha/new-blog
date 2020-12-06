@@ -103,7 +103,7 @@
     @apply py-1;
   }
 
-  code {
+  p code {
     @apply rounded;
     @apply border border-solid bg-gray-300;
     @apply text-sm;
