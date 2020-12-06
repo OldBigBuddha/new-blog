@@ -1,9 +1,9 @@
 import { AppProps } from 'next/app'
 import * as gtag from '../lib/gtag'
-import 'highlight.js/styles/atom-one-dark.css'
-import '../styles/global.css'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
+import '../styles/global.css'
+import 'highlight.js/styles/atom-one-dark.css'
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()
