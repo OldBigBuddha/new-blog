@@ -8,8 +8,8 @@ type Props = {
 
 const PostItem: React.FC<Props> = ({post}: Props) => {
   return (
-    <div className="inline-block my-2 p-2">
-      <Link href={`/post/${post.slug}`}><a className="text-lg font-bold mb-2">{post.title}</a></Link>
+    <div className="inline-block p-2 md:my-2">
+      <Link href={`/post/${post.slug}`}><a className="text-base font-bold mb-2 md:text-lg">{post.title}</a></Link>
       {post.tags && (
         <Tags tags={post.tags} />
       )}

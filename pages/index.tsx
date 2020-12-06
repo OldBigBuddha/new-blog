@@ -20,21 +20,21 @@ const Index = ({ lastPosts }: Props) => {
         <title>Simple is Best</title>
       </Head>
       <Container>
-        <div className="grid grid-rows-2 grid-cols-2 mx-8">
+        <div className="flex flex-col lg:grid lg:grid-rows-2 lg:grid-cols-2 mx-8">
 
           {/* 左カラム */}
-          <section className="row-start-1 row-end-2 col-start-1">
+          <section className="lg:row-start-1 lg:row-end-2 lg:col-start-1">
             <h2 className={style.index__h2}>Writer</h2>
             <Profile />
           </section>
 
-          <section className="row-start-2 row-end-3 col-start-1">
+          <section className="lg:row-start-2 lg:row-end-3 lg:col-start-1">
             <h2 className={style.index__h2}>Links</h2>
             <Links />
           </section>
 
           {/* 右カラム */}
-          <section className="row-start-1 row-end-3 col-start-2">
+          <section className="lg:row-start-1 lg:row-end-3 lg:col-start-2">
             <h2 className={style.index__h2}>New articles</h2>
             <PostList posts={lastPosts}/>
           </section>
