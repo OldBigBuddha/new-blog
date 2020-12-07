@@ -14,40 +14,10 @@
 
 /* Your own custom utilities */
 @layer base {
-  html,
-  body {
-    @apply h-screen;
-    @apply w-screen;
-
-    font-family: fot-tsukubrdgothic-std, -apple-system, BlinkMacSystemFont,
-      Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-      Helvetica Neue, sans-serif;
-    @apply font-normal;
-    @apply text-base;
-
-    @apply bg-gray-100;
-    @apply text-gray-700;
-  }
-
-  h2,
   h3,
   h4 {
     @apply text-gray-700;
     @apply my-4;
-  }
-  h2 {
-    @apply text-2xl;
-    @apply text-gray-700;
-
-    @apply border-b-2;
-    @apply border-solid;
-    @apply border-gray-700;
-  }
-
-  h2::before {
-    content: "#";
-
-    @apply mr-2;
   }
 
   h3 {
@@ -55,7 +25,7 @@
 
     @apply border-b;
     @apply border-solid;
-    @apply border-gray-700;
+    @apply border-gray-600;
   }
 
   h3::before {
@@ -72,11 +42,6 @@
     @apply my-4;
   }
 
-  a {
-    @apply text-green-500;
-    @apply no-underline;
-  }
-
   a:hover {
     @apply underline;
     @apply cursor-pointer;
@@ -90,22 +55,7 @@
     @apply p-2;
   }
 
-  ul,
-  ol {
-    @apply ml-12;
-    @apply mb-4;
-  }
-
-  li {
-    @apply list-disc;
-    @apply leading-normal;
-
-    @apply py-1;
-  }
-
   p code {
-    @apply rounded;
-    @apply border border-solid bg-gray-300;
     @apply text-sm;
     @apply font-mono;
 
