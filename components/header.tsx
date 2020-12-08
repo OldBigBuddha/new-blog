@@ -1,11 +1,10 @@
-import { Button, useColorMode } from '@chakra-ui/react'
 import Link from 'next/link'
+
+import DarkModeSwitcher from "./dark-mode-switcher"
 
 import style from '../styles/header.module.css'
 
 const Header = () => {
-  const { colorMode, toggleColorMode } = useColorMode()
-
   return (
     <header className="flex justify-between mx-6 mb-10 mt-4">
       <Link href="/">
@@ -15,9 +14,7 @@ const Header = () => {
         </a>
       </Link>
 
-      <Button margin={4} textAlign="center" border="2px" onClick={toggleColorMode}>
-        Toggle {colorMode === "light" ? "Dark" : "Light"}
-      </Button>
+      <DarkModeSwitcher />
     </header>
   )
 }
