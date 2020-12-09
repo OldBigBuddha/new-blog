@@ -1,3 +1,4 @@
+import { Box } from '@chakra-ui/react';
 import style from '../styles/tag.module.css'
 
 type Props = {
@@ -5,9 +6,9 @@ type Props = {
 }
 
 const Tag: React.FC<Props> = ({tag}: Props) => (
-  <span className={style.tag}>
+  <Box className={style.tag}>
     {tag}
-  </span>
+  </Box>
 )
 
 export default Tag;
