@@ -26,7 +26,7 @@ const PrivacyPolicy: React.FC = () => (
 
             <Box as="section" marginY={4}>
               <Heading as="h4" fontSize="lg" >Google Adsense（グーグル アドセンス）</Heading>
-              <Text>当ブログでは第三者配信の広告サービス「Google Adsense グーグルアドセンス」を利用しています。広告配信事業者は、ユーザーの興味に応じた広告を表示するために Cookie を使用することがあります。Cookie を無効にする設定および Google アドセンスに関する詳細は「<a href="https://policies.google.com/technologies/ads?hl=ja">広告 – ポリシーと規約 – Google</a>」をご覧ください。</Text>
+              <Text>当ブログでは第三者配信の広告サービス「Google Adsense グーグルアドセンス」を利用しています。広告配信事業者は、ユーザーの興味に応じた広告を表示するために Cookie を使用することがあります。Cookie を無効にする設定および Google アドセンスに関する詳細は「<Link href="https://policies.google.com/technologies/ads?hl=ja">広告 – ポリシーと規約 – Google</Link>」をご覧ください。</Text>
             </Box>
 
             <Box as="section" marginY={4}>

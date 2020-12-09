@@ -1,5 +1,5 @@
 const a = {
-  color: "green.500",
+  color: "brand.500",
   textDecoration: "no-underline",
 };
 
