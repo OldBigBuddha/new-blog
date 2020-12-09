@@ -6,6 +6,12 @@ import a from "./element/a";
 import { ol, ul, li } from "./element/list";
 
 const theme = extendTheme({
+  fonts: {
+    body:
+      "fot-tsukubrdgothic-std, -apple-system, BlinkMacSystemFont,Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,Helvetica Neue, sans-serif",
+    heading:
+      "fot-tsukubrdgothic-std, -apple-system, BlinkMacSystemFont,Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,Helvetica Neue, sans-serif",
+  },
   styles: {
     global: {
       body,

@@ -22,7 +22,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     }
   }, [router.events])
   return (
-    <ChakraProvider resetCSS={true} theme={theme}>
+    <ChakraProvider resetCSS theme={theme}>
       <Component {...pageProps} />
     </ChakraProvider>
   )
