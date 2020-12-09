@@ -1,3 +1,5 @@
+import { Flex } from  "@chakra-ui/react";
+
 import Tag from "./tag";
 
 type Props = {
@@ -5,9 +7,9 @@ type Props = {
 }
 
 const Tags: React.FC<Props> = ({tags}: Props) => (
-  <div className="flex flex-row">
-    {tags.map((tag) => <Tag tag={tag}/>)}
-  </div>
+  <Flex direction="row">
+    {tags.map((tag) => <Tag tag={tag} key={tag}/>)}
+  </Flex>
 )
 
 export default Tags;
