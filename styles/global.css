@@ -47,14 +47,6 @@
     @apply cursor-pointer;
   }
 
-  img {
-    @apply block;
-    @apply bg-white;
-    @apply rounded-xl;
-    @apply shadow;
-    @apply p-2;
-  }
-
   p code {
     @apply text-sm;
     @apply font-mono;

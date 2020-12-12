@@ -6,6 +6,7 @@ import body from "./element/body";
 import h2 from "./element/headings/h2";
 import h3 from "./element/headings/h3";
 import a from "./element/a";
+import img from "./element/img";
 import { ol, ul, li } from "./element/list";
 
 import Link from "./component/link";
@@ -41,6 +42,7 @@ const theme = extendTheme({
       h2,
       h3,
       a,
+      img,
       ul,
       ol,
       li,
