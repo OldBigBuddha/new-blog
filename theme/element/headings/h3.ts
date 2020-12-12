@@ -1,7 +1,7 @@
 import { useColorMode } from "@chakra-ui/react";
 
 const h3 = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
   return {
     color: colorMode == "dark" ? "gray.600" : "gray.100",
     fontSize: "1.25rem",
