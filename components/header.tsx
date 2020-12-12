@@ -5,7 +5,7 @@ import DarkModeSwitcher from "./dark-mode-switcher";
 const Header = () => {
   const {colorMode} = useColorMode();
   return (
-    <Flex as="header" justify="space-between" marginX={3} marginBottom={10} marginTop={4}>
+    <Flex as="header" justify="space-between" paddingX={8} marginX={3} marginBottom={10} marginTop={4}>
       <Link
         href="/"
         fontSize={{base: "2xl", md: "4xl"}} fontWeight="bold"

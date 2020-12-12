@@ -42,11 +42,6 @@
     @apply my-4;
   }
 
-  a:hover {
-    @apply underline;
-    @apply cursor-pointer;
-  }
-
   p code {
     @apply text-sm;
     @apply font-mono;
