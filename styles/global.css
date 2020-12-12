@@ -14,24 +14,9 @@
 
 /* Your own custom utilities */
 @layer base {
-  h3,
   h4 {
     @apply text-gray-700;
     @apply my-4;
-  }
-
-  h3 {
-    @apply text-xl;
-
-    @apply border-b;
-    @apply border-solid;
-    @apply border-gray-600;
-  }
-
-  h3::before {
-    content: "##";
-
-    @apply mr-2;
   }
 
   h4 {
