@@ -14,19 +14,6 @@
 
 /* Your own custom utilities */
 @layer base {
-  h4 {
-    @apply text-gray-700;
-    @apply my-4;
-  }
-
-  h4 {
-    @apply text-lg;
-  }
-
-  p {
-    @apply my-4;
-  }
-
   p code {
     @apply text-sm;
     @apply font-mono;

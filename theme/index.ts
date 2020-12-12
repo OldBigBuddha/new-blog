@@ -5,7 +5,9 @@ import breakpoints from "./breakpoint";
 import body from "./element/body";
 import h2 from "./element/headings/h2";
 import h3 from "./element/headings/h3";
-import a from "./element/a";
+import h4 from "./element/headings/h4";
+import a from "./element/anchor";
+import p from "./element/paragraph";
 import img from "./element/img";
 import { ol, ul, li } from "./element/list";
 
@@ -39,8 +41,10 @@ const theme = extendTheme({
   styles: {
     global: {
       body,
+      p,
       h2,
       h3,
+      h4,
       a,
       img,
       ul,
