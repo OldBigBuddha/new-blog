@@ -1,4 +1,4 @@
-import {Box, Link as ChakraLink} from "@chakra-ui/react";
+import {Box, Link} from "@chakra-ui/react";
 import Post from "../interfaces/post"
 import Tags from "./tags";
 
@@ -9,7 +9,7 @@ type Props = {
 const PostItem: React.FC<Props> = ({post}: Props) => {
   return (
     <Box marginY={2}>
-      <ChakraLink textColor="green.500" fontWeight="bold" href={`/post/${post.slug}`}>{post.title}</ChakraLink>
+      <Link textColor="green.500" fontWeight="bold" href={`/posts/${post.slug}`}>{post.title}</Link>
       {post.tags && (<Tags tags={post.tags} />)}
     </Box>
   )
