@@ -1,4 +1,4 @@
-import { Grid, GridItem, Heading } from "@chakra-ui/react"
+import { Box, Grid, GridItem, Heading, Link } from "@chakra-ui/react"
 
 import Container from '../components/container'
 import Layout from '../components/layout'
@@ -79,6 +79,7 @@ const Index = ({ lastPosts }: Props) => {
               New articles
             </Heading>
             <PostList posts={lastPosts}/>
+            <Box textAlign="end"><Link href="/posts">もっと見る→</Link></Box>
           </GridItem>
 
         </Grid>

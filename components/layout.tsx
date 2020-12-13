@@ -14,7 +14,7 @@ const Layout = ({ children }: Props) => {
       <Meta />
       <Box minHeight="100vh" position="relative" paddingBottom="2rem">
         <Header />
-        <main>{children}</main>
+        <Box as="main" marginBottom={4}>{children}</Box>
         <Footer />
       </Box>
     </>
