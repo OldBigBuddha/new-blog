@@ -5,7 +5,7 @@ import DarkModeSwitcher from "./dark-mode-switcher";
 const Header = () => {
   const {colorMode} = useColorMode();
   return (
-    <Flex as="header" justify="space-between" paddingX={8} marginX={3} marginBottom={10} marginTop={4}>
+    <Flex as="header" justify="space-between" alignItems="center" paddingX={{base: 4, md: 8}} marginBottom={{base: 8, md: 10}} marginTop={4}>
       <Link
         href="/"
         fontSize={{base: "2xl", md: "4xl"}} fontWeight="bold"
@@ -16,9 +16,9 @@ const Header = () => {
           boxShadow: "md"
         }}
         transitionProperty="box-shadow" transitionDuration="150mx">
-        <HStack spacing={0} align="baseline">
+        <HStack spacing={0} alignItems="baseline">
           <Image h="55px" backgroundColor="transparent" shadow="none" padding={0} src="/img/logo.png"/>
-          <Box as="span" textColor={colorMode == "dark" ? "gray.800" : "gray.200"} marginLeft="0px" marginTop="auto">imple is Best</Box>
+          <Box as="span" textAlign="center" textColor={colorMode == "dark" ? "gray.800" : "gray.200"}>imple is Best</Box>
         </HStack>
       </Link>
 
