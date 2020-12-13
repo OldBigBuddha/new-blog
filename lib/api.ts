@@ -40,7 +40,7 @@ export const getLastPosts = (n: number = 5): Post[] => {
 export const getAllPosts = () => {
   const filenames = getPostFilename();
   const posts: Post[] = filenames
-    .filter((filename) => filename != "preview")
+    .filter((filename) => filename != "preview.md")
     .map((filename) => getPostByFilename(filename))
     .sort((a, b) => b.date - a.date);
 
