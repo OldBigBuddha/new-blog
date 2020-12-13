@@ -1,9 +1,0 @@
-.index__h2 {
-  @apply text-xl;
-  @apply font-bold;
-  @apply border-none;
-}
-
-.index__h2::before {
-  content: "";
-}

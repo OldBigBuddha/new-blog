@@ -1,3 +1,5 @@
+import { Grid, GridItem, Heading } from "@chakra-ui/react"
+
 import Container from '../components/container'
 import Layout from '../components/layout'
 import { getLastPosts } from '../lib/api'
@@ -7,7 +9,6 @@ import PostList from '../components/post-list'
 import Profile from '../components/profile'
 import Links from '../components/links'
 
-import style from '../styles/index.module.css'
 
 type Props = {
   lastPosts: Post[]
@@ -20,26 +21,68 @@ const Index = ({ lastPosts }: Props) => {
         <title>Simple is Best</title>
       </Head>
       <Container>
-        <div className="flex flex-col lg:grid lg:grid-rows-2 lg:grid-cols-2 mx-8">
+        <Grid
+          templateRows="repeat(2, minmax(0, 1fr))"
+          templateColumns="repeat(2, minmax(0, 1fr)"
+          columnGap={10}
+          rowGap={5}
+          marginX={8} >
 
           {/* 左カラム */}
-          <section className="lg:row-start-1 lg:row-end-2 lg:col-start-1">
-            <h2 className={style.index__h2}>Writer</h2>
+          <GridItem
+            as="section"
+            rowStart={1}
+            rowEnd={2}
+            colStart={1}>
+            <Heading
+              fontSize="1.25rem"
+              fontWeight="bold"
+              border="none"
+              _before={{
+                content: "''"
+              }}
+            >
+              Writer
+            </Heading>
             <Profile />
-          </section>
+          </GridItem>
 
-          <section className="lg:row-start-2 lg:row-end-3 lg:col-start-1">
-            <h2 className={style.index__h2}>Links</h2>
+          <GridItem
+            as="section"
+            rowStart={2}
+            rowEnd={3}
+            colStart={1}>
+            <Heading
+              fontSize="1.25rem"
+              fontWeight="bold"
+              border="none"
+              _before={{
+                content: "''"
+              }}>
+              Links
+            </Heading>
             <Links />
-          </section>
+          </GridItem>
 
           {/* 右カラム */}
-          <section className="lg:row-start-1 lg:row-end-3 lg:col-start-2">
-            <h2 className={style.index__h2}>New articles</h2>
+          <GridItem
+            as="section"
+            rowStart={1}
+            rowEnd={3}
+            colStart={2}>
+            <Heading
+              fontSize="1.25rem"
+              fontWeight="bold"
+              border="none"
+              _before={{
+                content: "''"
+              }}>
+              New articles
+            </Heading>
             <PostList posts={lastPosts}/>
-          </section>
+          </GridItem>
 
-        </div>
+        </Grid>
       </Container>
     </Layout>
   )

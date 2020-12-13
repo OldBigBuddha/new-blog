@@ -6,7 +6,7 @@ type Props = {
 }
 
 const Container: FunctionComponent = ({ children }: Props) => {
-  return <Box width="100%" marginX="auto" paddingX={5}>{children}</Box>
+  return <Box width={{base: "100%", xl: "50%", lg: "65%", md: "80%"}} marginX="auto" paddingX={5}>{children}</Box>
 }
 
 export default Container
