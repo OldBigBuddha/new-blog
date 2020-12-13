@@ -1,12 +1,42 @@
 ---
-title: 'Preview Mode for Static Generation'
-date: '2020-03-16T05:35:07.322Z'
+title: Notation Preview
+date: 2020-12-01
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
+## Heading2
 
-Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
+### Heading3
 
-## Lorem Ipsum
+#### Heading4
 
-Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+## paragraph
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dapibus molestie sem vitae tristique. Aliquam in ultricies justo, facilisis sagittis lacus. Curabitur sagittis commodo est et dapibus. Vestibulum feugiat a mauris vitae consectetur.
+
+Mauris quis placerat quam. Aliquam feugiat, nibh a maximus mollis, turpis ante molestie felis, quis luctus tellus sapien in felis. In tempor nunc sit amet lacinia consequat. Curabitur vel tincidunt felis. Quisque sit amet nisi risus. Phasellus cursus sapien a ipsum semper, non efficitur risus fermentum. Sed volutpat feugiat lacinia. Sed iaculis mi vel feugiat mollis. Morbi et consequat sem. Donec et tincidunt tortor, a eleifend arcu. Nulla sagittis nibh metus, eget convallis dui dignissim sit amet.
+
+## List
+
+### Unordered List
+
+- ListItem
+- ListItem
+- ListItem
+- ListItem
+
+### Ordered List
+
+1. ListItem
+2. ListItem
+3. ListItem
+4. ListItem
+
+## Image
+
+![sample](/img/profile.png)
+
+## quoted
+
+> 身体症状症は、慢性的な身体症状がみられることに加えて、その症状に関連して不釣り合いに大きな苦痛、心配、日常的な役割遂行の問題がみられることを特徴とします。
+
+Reference: [身体症状症 - 10. 心の健康問題 - MSDマニュアル家庭版](https://www.msdmanuals.com/ja-jp/%E3%83%9B%E3%83%BC%E3%83%A0/10-%E5%BF%83%E3%81%AE%E5%81%A5%E5%BA%B7%E5%95%8F%E9%A1%8C/%E8%BA%AB%E4%BD%93%E7%97%87%E7%8A%B6%E7%97%87%E3%81%8A%E3%82%88%E3%81%B3%E9%96%A2%E9%80%A3%E7%97%87%E7%BE%A4/%E8%BA%AB%E4%BD%93%E7%97%87%E7%8A%B6%E7%97%87)

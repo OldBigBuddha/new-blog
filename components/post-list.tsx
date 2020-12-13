@@ -7,14 +7,14 @@ type Props = {
   posts: Post[]
 }
 
-const PostList: React.FC<Props> = ({posts}: Props) => (
-  <List>
-    {posts.map((post) => (
+const PostList: React.FC<Props> = ({posts}: Props) =>
+  <List marginBottom={0}>
+    {posts.map(post => (
       <ListItem listStyleType="none" key={post.slug}>
         <PostItem post={post} />
       </ListItem>
     ))}
   </List>
-);
+;
 
 export default PostList;

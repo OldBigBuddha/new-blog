@@ -29,13 +29,13 @@ const Post = ({ post }: Props) => {
         <meta property="og:title" content={`${post.title} | Simple is Best`} />
         <meta property="og:description" content="OJI のブログ" />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content={`https://oldbigbuddha.dev/post/${post.slug}`} />
+        <meta property="og:url" content={`https://oldbigbuddha.dev/posts/${post.slug}`} />
 
-        <meta name="twitter:url" content={`https://oldbigbuddha.dev/post/${post.slug}`} />
+        <meta name="twitter:url" content={`https://oldbigbuddha.dev/posts/${post.slug}`} />
         <meta name="twitter:title" content={`${post.title} | Simple is Best`} />
         <meta name="twitter:description" content="OJI のブログ" />
 
-        <link rel="canonical" href={`https://oldbigbuddha.dev/post/${post.slug}`} />
+        <link rel="canonical" href={`https://oldbigbuddha.dev/posts/${post.slug}`} />
       </Head>
       <Container>
         <article className="mb-32 max-w-2xl mx-auto">

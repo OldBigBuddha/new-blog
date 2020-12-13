@@ -3,7 +3,7 @@ import Head from 'next/head'
 const Meta = () => {
   return (
     <Head>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="format-detection" content="telephone=no" />
       <meta name="author" content="OldBigBuddha" />
       <meta name="description" content="OJI のブログ" />
