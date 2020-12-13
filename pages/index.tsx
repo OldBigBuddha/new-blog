@@ -22,11 +22,10 @@ const Index = ({ lastPosts }: Props) => {
       </Head>
       <Container>
         <Grid
-          templateRows="repeat(2, minmax(0, 1fr))"
-          templateColumns="repeat(2, minmax(0, 1fr)"
+          templateRows={{base: "repeat(4, minmax(0, 1fr)", lg: "repeat(2, minmax(0, 1fr))"}}
+          templateColumns={{base: "repeat(1, minmax(0, 1fr)", lg: "repeat(2, minmax(0, 1fr)"}}
           columnGap={10}
-          rowGap={5}
-          marginX={8} >
+          marginX={{base: 4, lg: 8}} >
 
           {/* 左カラム */}
           <GridItem
@@ -67,9 +66,9 @@ const Index = ({ lastPosts }: Props) => {
           {/* 右カラム */}
           <GridItem
             as="section"
-            rowStart={1}
-            rowEnd={3}
-            colStart={2}>
+            rowStart={{base: 3, lg: 1}}
+            rowEnd={{base: 5, lg: 3}}
+            colStart={{base: 1, lg: 2}}>
             <Heading
               fontSize="1.25rem"
               fontWeight="bold"
