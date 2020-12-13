@@ -1,3 +1,4 @@
+import { Box } from '@chakra-ui/react'
 import { ReactNode, FunctionComponent } from 'react'
 
 type Props = {
@@ -5,7 +6,7 @@ type Props = {
 }
 
 const Container: FunctionComponent = ({ children }: Props) => {
-  return <div className="container mx-auto mb-4 px-5">{children}</div>
+  return <Box width={{base: "100%", xl: "50%", lg: "65%", md: "80%"}} marginX="auto" paddingX={5}>{children}</Box>
 }
 
 export default Container

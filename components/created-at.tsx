@@ -1,4 +1,5 @@
 import { format } from 'date-fns'
+import { Box } from "@chakra-ui/react"
 
 type Props = {
   createdAt: number
@@ -6,7 +7,14 @@ type Props = {
 
 const CreatedAt = ({ createdAt }: Props) => {
   const date = new Date(createdAt)
-  return <time className="block text-base text-center mb-12" dateTime={format(date, "yyyy-MM-dd")}>{format(date, "yyyy-MM-dd")}</time>
+  return <Box
+            as="time"
+            display="block"
+            textAlign="center"
+            marginBottom={12}
+            dateTime={format(date, "yyyy-MM-dd")}>
+            {format(date, "yyyy-MM-dd")}
+        </Box>
 }
 
 export default CreatedAt

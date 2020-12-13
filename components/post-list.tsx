@@ -1,3 +1,5 @@
+import { List, ListItem } from "@chakra-ui/react";
+
 import Post from "../interfaces/post"
 import PostItem from "./post-item"
 
@@ -6,13 +8,13 @@ type Props = {
 }
 
 const PostList: React.FC<Props> = ({posts}: Props) => (
-  <ul className="ml-0 md:ml-4">
+  <List>
     {posts.map((post) => (
-      <li className="list-none mb-0 ml-0 py-0" key={post.slug}>
+      <ListItem listStyleType="none" key={post.slug}>
         <PostItem post={post} />
-      </li>
+      </ListItem>
     ))}
-  </ul>
+  </List>
 );
 
 export default PostList;

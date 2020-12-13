@@ -1,15 +1,19 @@
-import Link from "next/link"
+import { useColorMode } from "@chakra-ui/react"
+
+import { Flex } from "@chakra-ui/react";
+import {Link} from "@chakra-ui/react";
 
 const Footer = () => {
+  const {colorMode} = useColorMode()
   return (
-    <footer className="flex text-xs md:text-base bg-accent-1 border-t border-accent-2 justify-between">
-      <span className="flex flex-col md:flex-row mx-3 ">License: <a className="font-bold hover:underline" href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a></span>
+    <Flex as="footer" width="100%" fontSize={{base: "xs", md: "base"}} backgroundColor={colorMode == "dark" ? "white" : "gray.600"} justify="space-between" position="absolute" bottom="0">
+      <Flex as="span" direction={{base: "column", lg: "row"}} marginX={3}>License: <Link href="https://creativecommons.org/licenses/by-sa/4.0/" fontWeight="bold">CC-BY-SA 4.0</Link></Flex>
       <small>&copy; 2020 OldBigBuddha.</small>
-      <div className="flex flex-col lg:flex-row">
-        <Link href="/privacy-policy"><a className="mx-3 font-bold hover:underline">Privacy Policy</a></Link>
-        <a href="https://github.com/OldBigBuddha/Blog" className="mx-3 font-bold hover:underline">View on GitHub</a>
-      </div>
-    </footer>
+      <Flex direction={{base: "column", lg: "row"}}>
+        <Link href="/privacy-policy" fontWeight="bold" marginX={3}>Privacy Policy</Link>
+        <Link href="https://github.com/OldBigBuddha/Blog" fontWeight="bold" marginX={3}>View on GitHub</Link>
+      </Flex>
+    </Flex>
   )
 }
 

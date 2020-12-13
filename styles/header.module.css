@@ -1,8 +1,0 @@
-.logo {
-  @apply bg-transparent;
-  @apply shadow-none;
-  @apply rounded-none;
-  @apply p-0;
-
-  height: 55px;
-}
