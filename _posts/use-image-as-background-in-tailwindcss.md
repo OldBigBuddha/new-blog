@@ -81,3 +81,5 @@ module.exports = {
 ```
 
 あとは、`bg-{key}`（ここでは `bg-hero-img`）をクラスに設定すれば使うことができます。
+
+参考: [Background Image - Tailwind CSS](https://tailwindcss.com/docs/background-image#background-images)
