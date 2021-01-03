@@ -8,6 +8,8 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   res.setHeader("Content-Type", "text/xml");
   res.write("RSS Feed");
   res.end();
+
+  return { props: {}}
 }
 
 export default Rss;
