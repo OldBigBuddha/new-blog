@@ -9,7 +9,8 @@ type Props = {
 }
 
 const PostHeader = ({ title, date }: Props) => {
-  const passedYear = (new Date()).getFullYear() - (new Date(date)).getFullYear()
+  const passedTime = (new Date()).getTime() - (new Date(date)).getTime()
+  const passedDays = Math.floor(passedTime / (1000*60*60*24))
   return (
     <>
       <Heading as="h1"
@@ -21,7 +22,7 @@ const PostHeader = ({ title, date }: Props) => {
         {title}
       </Heading>
       <CreatedAt createdAt={date}/>
-      {passedYear > 0 && (<OldAlert pastYear={passedYear} />)}
+      {passedDays >= 365 && (<OldAlert pastYear={Math.floor(passedDays/365)} />)}
     </>
   )
 }
