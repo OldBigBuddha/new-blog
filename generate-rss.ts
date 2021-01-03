@@ -44,7 +44,7 @@ const getAllPosts = async () => {
 const createFeed = (post: Post) => `    <item>
       <title>${post.title}</title>
       <link>https://oldbigbuddha.dev/posts/${post.slug}</link>
-      <pubDate>${post.date}</pubDate>
+      <pubDate>${new Date(post.date).toUTCString()}</pubDate>
     </item>`;
 
 const writeRss = async (filePath: string, content: string) => {
@@ -59,7 +59,7 @@ const writeRss = async (filePath: string, content: string) => {
 
 const generateRss = async () => {
   const posts = await getAllPosts();
-  const lastBuildDate = posts.slice(-1)[0].date;
+  const lastBuildDate = new Date(posts.slice(-1)[0].date).toUTCString();
   const feeds = posts.map((post) => createFeed(post));
 
   const rss = `<?xml version="1.0" ?>
