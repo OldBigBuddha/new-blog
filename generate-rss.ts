@@ -44,7 +44,8 @@ const getAllPosts = async () => {
 const createFeed = (post: Post) => `    <item>
       <title>${post.title}</title>
       <link>https://oldbigbuddha.dev/posts/${post.slug}</link>
-      <pubDate>${post.date}</pubDate>
+      <guid>https://oldbigbuddha.dev/posts/${post.slug}</guid>
+      <pubDate>${new Date(post.date).toUTCString()}</pubDate>
     </item>`;
 
 const writeRss = async (filePath: string, content: string) => {
@@ -59,17 +60,18 @@ const writeRss = async (filePath: string, content: string) => {
 
 const generateRss = async () => {
   const posts = await getAllPosts();
-  const lastBuildDate = posts.slice(-1)[0].date;
+  const lastBuildDate = new Date(posts.slice(-1)[0].date).toUTCString();
   const feeds = posts.map((post) => createFeed(post));
 
   const rss = `<?xml version="1.0" ?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Simple is Best</title>
     <link>https://oldbigbuddha.dev</link>
     <description>シンプルが一番</description>
     <language>ja</language>
     <lastBuildDate>${lastBuildDate}</lastBuildDate>
+    <atom:link href="https://oldbigbuddha.dev/posts/rss.xml" rel="self" type="application/rss+xml" />
 ${feeds.join("\n")}
   </channel>
 </rss>`;
