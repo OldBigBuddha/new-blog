@@ -1,4 +1,6 @@
-import * as fs from "fs/promises";
+import * as fs from "fs";
+const fsPromise = fs.promises;
+
 import { join } from "path";
 
 import matter from "gray-matter";
@@ -14,7 +16,7 @@ const outputPostDirPath = join(process.cwd(), "out/posts");
 
 export const getPost = async (slug: string) => {
   const fullPath = join(postDirPath, `${slug}.md`);
-  const fileContents = await fs.readFile(fullPath, "utf8");
+  const fileContents = await fsPromise.readFile(fullPath, "utf8");
   const { data } = matter(fileContents);
 
   const post: Post = {
@@ -27,7 +29,7 @@ export const getPost = async (slug: string) => {
 };
 
 const getAllPosts = async () => {
-  const filenames = await fs.readdir(outputPostDirPath);
+  const filenames = await fsPromise.readdir(outputPostDirPath);
   const slugs = filenames.map((filename) => filename.replace(/\.html$/, ""));
   const promisePosts = slugs
     .filter((filename) => filename != "preview.md")
@@ -49,7 +51,7 @@ const writeRss = async (filePath: string, content: string) => {
   try {
     console.log(`Writing to ${filePath}`);
 
-    await fs.writeFile(filePath, content, "utf-8");
+    await fsPromise.writeFile(filePath, content, "utf-8");
   } catch (err) {
     console.error(err);
   }
