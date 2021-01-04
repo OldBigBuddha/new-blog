@@ -36,6 +36,12 @@ const Post = ({ post }: Props) => {
         <meta name="twitter:description" content="OJI のブログ" />
 
         <link rel="canonical" href={`https://oldbigbuddha.dev/posts/${post.slug}`} />
+
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="Simple is Best"
+          href="https://oldbigbuddha.dev/posts/rss.xml" />
       </Head>
       <Container>
         <article className="mb-32 max-w-2xl mx-auto">
