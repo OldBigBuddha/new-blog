@@ -8,7 +8,7 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@babel/core": "7.12.13",
+    "@babel/core": "7.13.10",
     "@chakra-ui/icons": "1.0.2",
     "@chakra-ui/react": "1.1.2",
     "@emotion/react": "11.1.4",
