@@ -17,7 +17,6 @@ const theme = extendTheme({
   breakpoints,
   colors: {
     brand: {
-      50: defaultTheme.colors.green[50],
       100: defaultTheme.colors.green[100],
       200: defaultTheme.colors.green[200],
       300: defaultTheme.colors.green[300],
