@@ -23,7 +23,7 @@
     "next": "11.1.4",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "tailwindcss": "2.0.2"
+    "tailwindcss": "2.2.19"
   },
   "devDependencies": {
     "@types/classnames": "2.2.11",
