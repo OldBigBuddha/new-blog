@@ -26,6 +26,7 @@
     "tailwindcss": "2.0.2"
   },
   "devDependencies": {
+    "@tsconfig/next": "1.0.2",
     "@types/classnames": "2.2.11",
     "@types/jest": "26.0.20",
     "@types/markdown-it": "10.0.3",
