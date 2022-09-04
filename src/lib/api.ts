@@ -4,7 +4,7 @@ import matter from "gray-matter";
 import Post from "../interfaces/post";
 import markdownToHtml from "./markdownToHtml";
 
-const postsDirectory = join(process.cwd(), "_posts");
+const postsDirectory = join(process.cwd(), "src/_posts");
 
 export const getPostFilename = (): string[] => {
   return fs.readdirSync(postsDirectory);

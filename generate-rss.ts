@@ -11,7 +11,7 @@ type Post = {
   date: number;
 };
 
-const postDirPath = join(process.cwd(), "_posts");
+const postDirPath = join(process.cwd(), "src/_posts");
 const outputPostDirPath = join(process.cwd(), "out/posts");
 
 export const getPost = async (slug: string) => {
