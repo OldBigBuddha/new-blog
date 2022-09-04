@@ -68,7 +68,7 @@ function middleware2(req: express.Request, res: express.Response, next: express.
   next(); // ← これは `middleware3` が呼ばれる
 }
 
-function middleware1(req: express.Request, res: express.Response, next: express.NextFunction) {
+function middleware3(req: express.Request, res: express.Response, next: express.NextFunction) {
   // なんか処理
 
   res.send(data); // 最後のミドルウェアなので next ではなくレスポンスを返してあげる
