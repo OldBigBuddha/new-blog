@@ -5,7 +5,9 @@ date: 2022-12-01
 
 この記事は [Google Developer Student Clubs Japan Advent Calendar 2022](https://qiita.com/advent-calendar/2022/gdsc-jp) 1日目の記事です。
 
-Google Developer Student Clubs、略して GDCS の存在を皆さんご存知でしょうか？実は昨年から日本で始まった日本では非常に新しい取り組みなので、日本語での説明がありません。Google Developers からのリリースか GDSC 各チャプターの公式ページ、それと[この記事](https://1e100.4watcher365.dev/google-cloud/other-googles/google-developer-student-clubs/)ぐらいしか私が把握している限りでは存在しません。そこで、GDSC のアドカレ1日目にかこつけて2022年度の Lead のひとりである私 OJI が説明できる限りの内容を日本語で説明します。
+Google Developer Student Clubs、略して GDSC の存在を皆さんご存知でしょうか？実は昨年から日本で始まった日本では非常に新しい取り組みなので、日本語での説明がありません。Google Developers からのリリースか GDSC 各チャプターの公式ページ、それと[この記事](https://1e100.4watcher365.dev/google-cloud/other-googles/google-developer-student-clubs/)ぐらいしか私が把握している限りでは存在しません。そこで、GDSC のアドカレ1日目にかこつけて2022年度の Lead のひとりである私 OJI が説明できる限りの内容を日本語で説明します。
+
+追記: 日本向けの公式ページがありました！（[goo.gle/gdsc-jp](https://goo.gle/gdsc-jp)）
 
 免責事項: こちらの投稿はあくまで GDSC プログラム参加者の一人が勝手に執筆し、勝手に公開しています。投稿後、いろいろな関係者にこちらの記事を確認してもらい、なるべく正確な情報をお届けできるように努力しますが、タイミングによってはこの記事に書いてあることが正しいとは限りません。最新の情報については各 GDSC チャプターもしくは Google Developers にお問い合わせください。
 
@@ -25,7 +27,9 @@ GDSC は一言でいうと大学や専門学校を基としたテクノロジー
 
 GDSC への関わり方は大きく分けて3つあります。ひとつは GDSC Lead として、もうひとつは GDSC メンバーとして、あとは GDSC が主催するイベントの参加者として GDSC と関係を持つことができます。
 
-GDCS には独自の周期が存在し、その周期ごとに Lead が選出されます。たとえば2022年10月から活動する GDSC Lead は[このような形](https://developers-jp.googleblog.com/2022/04/gdsc-leads-22-23.html)で募集されました。応募フォームから自己アピールを提出して担当者と面接した結果 Lead に相応しい人物と認められれば晴れてその年の GDSC Lead になることができます。Lead は名前の通り担当チャプターのリーダーとして活動しなくてはいけないため、メンバーに比べるとしなくてはいけないことが増えていきますが、その分良いこともあります。Google Developers から金銭面、スキル面でサポートしてもらえるのはもちろんのこと、現役の Googler とお話する機会があったり、Google I/O などの公式イベントに招待してもらえることもあります。個人的にはこれだけでも GDSC Lead になるメリットは百二十分に存在しますが、実は入ってからも色々得られるものがあったりなかったり……？少しでも興味があればぜひ一度 Lead に挑戦してみてください！
+GDSC には独自の周期が存在し、その周期ごとに Lead が選出されます。たとえば2022年10月から活動する GDSC Lead は[このような形](https://developers-jp.googleblog.com/2022/04/gdsc-leads-22-23.html)で募集されました。応募フォームから自己アピールを提出して担当者と面接した結果 Lead に相応しい人物と認められれば晴れてその年の GDSC Lead になることができます。Lead は名前の通り担当チャプターのリーダーとして活動しなくてはいけないため、メンバーに比べるとしなくてはいけないことが増えていきますが、その分良いこともあります。Google Developers から金銭面、スキル面でサポートしてもらえるのはもちろんのこと、現役の Googler とお話する機会があったり、Google I/O などの公式イベントに招待してもらえることもあります。個人的にはこれだけでも GDSC Lead になるメリットは百二十分に存在しますが、実は入ってからも色々得られるものがあったりなかったり……？少しでも興味があればぜひ一度 Lead に挑戦してみてください！
+
+この記事を読んでいるタイミングで GDSC Lead の募集がない場合、[こちらのフォーム](https://docs.google.com/forms/d/e/1FAIpQLScEoTS1okr85HUBKIS8dB9uHOv-GZWy_E2hGST-RXhKLvqEQA/viewform)からメールアドレスを登録することによって次回募集時にメール通知がいくようにできます。また、同じフォームにて質問も募集していますので、GDSC に関して質問があれば気軽に投稿してください！
 
 Lead は原則各チャプターに一人しかいませんので、一人だけでは GDSC としての活動を行うことはできません。そこには必ず協力してくれる仲間が必要で、その仲間たちのことを GDSC メンバーと呼びます。仲間というと少し堅苦しいですが、同志みたいなものです。Lead と一緒にイベントを開催したり、独自でなにか取り組みをしたりチャプターによってメンバーがすることは変わってきます。メンバーのいいところは、チャプターが募集している限りいつでも参加できる点です。たとえば私が Lead をしている GDSC 放送大学では所属大学に関係なく現在メンバーを募集しています。また、自分の大学や近所の大学に GDSC があると分かっているけど接す機会がなくて困っている、興味はあるけど近くに GDSC がなくてどうすればいいか分からないといった方にもポートもしますので、この記事を読んで少しでも GDSC に参加してみたいと思われたらぜひ[私の Twitter](https://twitter.com/oldbigbuddha) に DM をください！
 
@@ -33,7 +37,7 @@ Lead は原則各チャプターに一人しかいませんので、一人だけ
 
 GDSC として活動していく上でひとつの目標となるのが [Solution Challenge](https://developers.google.com/community/gdsc-solution-challenge) です。これは GDSC Agenda 2030 で出てくる「17の持続可能な開発目標」（いわゆる SDGｓ）に関連する身の回りの問題をテクノロジーの力で解決することがテーマとなっています。上位50チームには賞品と Googler やエキスパートの方からのメンタリング、上位10チームには賞金が出るなどかなり豪華なイベントとなっています。過去の Solution Challenge 選出作品などは YouTube や公式ページで確認するこできます。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PHpveYiS0OQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/PHpveYiS0OQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 昨年ではなんと国内のチャプターが Top 50 に選ばれています。優勝賞金や Googler からのメンタリングを目標に GDSC へ参加していただくのも大歓迎です。
 
